@@ -1,15 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Create instances of each shape using polymorphism
+        shape circle = new atributes.Circle(5);        // Circle with radius 5
+        shape rectangle = new atributes.Rectangle(4, 6); // Rectangle with width 4 and height 6
+        shape square = new atributes.Square(3);        // Square with side 3
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Display the areas by calling calculateArea
+        System.out.println("Circle Area: " + circle.calculateArea());
+        System.out.println("Rectangle Area: " + rectangle.calculateArea());
+        System.out.println("Square Area: " + square.calculateArea());
     }
 }
